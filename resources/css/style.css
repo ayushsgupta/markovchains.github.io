@@ -21,13 +21,20 @@ nav ul {
 nav a {
   color: #C4F7FD;
 }
+
+nav a:hover {
+  color: white;
+}
+
 body {
+  font-size: 16px;
   background-color: #6A8F9F;
   /*font-family: 'Roboto Condensed', sans-serif;*/
-  font-family: Helvetica, sans-serif;
+  /*font-family: Helvetica, sans-serif;*/
+  font-family: 'Hind', sans-serif;
   color: white;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 90px;
+  padding-right: 90px;
 }
 
 #group-members {
@@ -35,6 +42,10 @@ body {
   text-align: center;
   color: white;
   font-size: 14px;
+}
+
+.history h3 {
+  color: black;
 }
 
 #definition img {
@@ -50,6 +61,9 @@ h3 {
   margin-top: 40px;
 }
 
+#repl p {
+  /*text-align: center;*/
+}
 #repl h3 {
   text-align: center;
 }
