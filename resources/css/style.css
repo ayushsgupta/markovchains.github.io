@@ -14,7 +14,33 @@
   text-align: center;
 }
 
-nav ul {
+.floating-menu {
+  line-height: 20px
+  font-family: 'Roboto Condensed';
+  background: yellowgreen;
+  padding: 5px;;
+  width: 200px;
+  z-index: 100;
+  position: fixed;
+  top: 20px;
+  right: 0px;
+}
+
+.floating-menu a,
+  .floating-menu h3 {
+    line-height: 20px
+    font-family: 'Roboto Condensed';
+    font-size: 0.9em;
+    display: block;
+    margin: 0 0.5em;
+    color: white;
+}
+
+.floating-menu a:hover {
+  color: #C4F7FD;
+}
+
+/*nav ul {
   list-style-type: none;
   text-align: center;
 }
@@ -24,7 +50,7 @@ nav a {
 
 nav a:hover {
   color: white;
-}
+}*/
 
 body {
   font-size: 16px;
