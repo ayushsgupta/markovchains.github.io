@@ -14,10 +14,19 @@
   text-align: center;
 }
 
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+nav a {
+  color: #C4F7FD;
+}
 body {
   background-color: #6A8F9F;
   font-family: 'Roboto Condensed', sans-serif;
   color: white;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 #group-members {
@@ -26,10 +35,15 @@ body {
   color: white;
 }
 
-.history {
+h3 {
   text-align: center;
   margin-top: 40px;
-  /*text-decoration: underline;*/
-  /*border: dotted white;*/
-  /*font-weight: bold;*/
+}
+
+#repl h3 {
+  text-align: center;
+}
+
+#repl iframe {
+  padding-bottom: 30px
 }
