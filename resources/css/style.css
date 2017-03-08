@@ -59,9 +59,9 @@ nav a:hover {
 
 body {
   font-size: 16px;
-  background-color: #6A8F9F;
+  /*background-color: #6A8F9F;*/
+  background-color: #547482;
   /*font-family: 'Roboto Condensed', sans-serif;*/
-  /*font-family: Helvetica, sans-serif;*/
   font-family: 'Hind', sans-serif;
   color: white;
   padding-left: 90px;
