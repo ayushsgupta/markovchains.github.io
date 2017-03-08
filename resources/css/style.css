@@ -1,4 +1,4 @@
-#header {
+#title {
   opacity: 0.5;
   margin: 20px;
   padding: 1px;
@@ -6,7 +6,7 @@
   background-image: url("http://www.pixelstalk.net/wp-content/uploads/2016/05/Formula-math-text-texture-wallpaper.jpg");
 }
 
-#header #main-title {
+#title #main-title {
   font-size: 40px;
   letter-spacing: 3px;
   font-family: 'Roboto Condensed', sans-serif;
@@ -16,10 +16,20 @@
 
 body {
   background-color: #6A8F9F;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: white;
 }
 
 #group-members {
   font-family: 'Roboto Condensed', sans-serif;
   text-align: center;
   color: white;
+}
+
+.history {
+  text-align: center;
+  margin-top: 40px;
+  /*text-decoration: underline;*/
+  /*border: dotted white;*/
+  /*font-weight: bold;*/
 }
