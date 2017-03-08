@@ -15,6 +15,7 @@
 }
 
 .floating-menu {
+  opacity: 0.8;
   line-height: 20px
   font-family: 'Roboto Condensed';
   background: yellowgreen;
@@ -34,6 +35,10 @@
     display: block;
     margin: 0 0.5em;
     color: white;
+}
+
+.floating-menu:hover {
+  opacity: 1.0;
 }
 
 .floating-menu a:hover {
