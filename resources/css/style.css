@@ -3,7 +3,8 @@
   margin: 20px;
   padding: 1px;
   width: 900px;
-  background-image: url("http://www.pixelstalk.net/wp-content/uploads/2016/05/Formula-math-text-texture-wallpaper.jpg");
+  /*background-image: url("http://www.pixelstalk.net/wp-content/uploads/2016/05/Formula-math-text-texture-wallpaper.jpg");*/
+  background-image: url("https://68.media.tumblr.com/2d1e2fcaad0cf0f083a0f658e6fa95cf/tumblr_inline_mzn9n4LpEV1sn7qlj.gif");
 }
 
 #title #main-title {
@@ -15,7 +16,7 @@
 }
 
 .floating-menu {
-  opacity: 0.8;
+  opacity: 0.6;
   line-height: 20px
   font-family: 'Roboto Condensed';
   background: yellowgreen;
@@ -28,7 +29,7 @@
 }
 
 .floating-menu a,
-  .floating-menu h3 {
+  .floating-menu h2 {
     line-height: 20px
     font-family: 'Roboto Condensed';
     font-size: 0.9em;
@@ -45,20 +46,9 @@
   color: #C4F7FD;
 }
 
-/*nav ul {
-  list-style-type: none;
-  text-align: center;
-}
-nav a {
-  color: #C4F7FD;
-}
-
-nav a:hover {
-  color: white;
-}*/
-
 body {
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 30px;
   /*background-color: #6A8F9F;*/
   background-color: #547482;
   /*font-family: 'Roboto Condensed', sans-serif;*/
@@ -75,28 +65,15 @@ body {
   font-size: 14px;
 }
 
-.history h3 {
-  color: black;
+.section-title {
+  color: #DBFFA6,
 }
-
 #definition img {
   height: 200px;
 }
 
 #properties {
   padding-top: 100px;
-}
-
-h3 {
-  text-align: center;
-  margin-top: 40px;
-}
-
-#repl p {
-  /*text-align: center;*/
-}
-#repl h3 {
-  text-align: center;
 }
 
 #repl iframe {
