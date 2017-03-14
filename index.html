@@ -8,57 +8,83 @@
     <title>Markov Chains</title>
   </head>
   <body>
+    <!-- <nav>
+    In case I want to add a navigation bar for more webpages
+    </nav> -->
     <center><div id="title">
-      <h1 id="main-title"> Markov Chains</h1>
+      <h1 id="main-title">Intro to Markov Chains</h1>
     </div></center>
     <p id="group-members"> Text by Esther Cao, Ayush Gupta, and Vivian Young<br />Design by Vivian Young </p>
     <nav class="floating-menu">
-      <h2>Menu</h2>
+      <center><h2>Menu</h2></center>
       <a href="#history">History</a></li>
-      <a href="#definition">What is a Markov Chain?</a>
-      <a href="#properties">Properties of Markov Chains</a>
+      <a href="#definition">Markov Chains</a>
+      <!-- <a href="#properties">Properties</a> -->
       <a href=#transition-matrix>Transition Matrix</a>
+      <!-- <a href=#transition-properties>Properties of Transition Matrices</a> -->
       <a href="#state-vectors">State/Probability Vectors</a>
+      <!-- <a href="#state-vectors-properties">Properties of State Vectors</a> -->
+      <a href="regular">Regular and Steady-State</a>
       <a href=#repl>Markov Chains- Ruby Code</a>
       <a href=#sources>Sources</a>
     </nav>
     <div class="section-title" id="history">
       <h3>History</h3>
       <p>Markov chains are named after their creator, Andrey Markov. They are mathematical
-        systems that "hop" from one state to another. In other words, it can be used to
-        anticipate future events from a current state. Markov initially designed Markov chains in order
+        systems that anticipate future events from a current state. Markov initially designed Markov chains in order
         to analyze the frequencies of vowels and consonants in the novel<em> Eugene Onegin</em>.
-        They can be used to interpret and understand intricate, real-life processes.
-        A fundamental aspect of Markov chains is its tendency to anticipate future states based on only its previous state.
-        Because of this, more complex tasks are simplified and take into account a conditional probability
-        instead of programs that involve countless of past scenarios.</p>
+        </p>
     </div>
     <div class="section-title" id="definition"><!--What is a Markov Chain?-->
       <h3>What is a Markov Chain?</center> </h3>
       <img src="resources/images/chain.png" align="left">
-      <p>Markov Chains have a set of distinct states. The outcomes of trials in the Markov Chains
-      are dependent only on the outcome of the previous state. There can only be one state at a time. Each
-      state gives a probability distribution of different events occuring.</p>
+      <p>Markov Chains have a set of distinct states. They can be used to interpret and understand intricate, real-life processes.
+      A fundamental aspect of Markov chains is its tendency to anticipate future states based on only its previous state.
+      In other words, the outcomes of trials in the Markov Chains are dependent only on the outcome of the previous state. There can only be one state at a time. Each
+      state gives a probability distribution of different events occuring. Because of this, more complex tasks are simplified and take into account a conditional probability
+      instead of programs that involve countless of past scenarios.</p>
     </div>
     <div class="section-title" id="properties"><!--Properties of Markov Chains-->
       <h3>Properties of Markov Chains</center> </h3>
-      <p></p>
+        <ul>
+          <li>At any time, each object is at exactly one state</li>
+          <li>Objects move between states according to transition probabilities (based on current state)</li>
+          <li>Transition probabilities remain constant</li>
+        </ul>
     </div>
     <div class="section-title" id="example"><!--Example of Markov Chain-->
       <h3>Example Problem</center> </h3>
+
       <p></p>
     </div>
     <div class="section-title" id="transition-matrix"><!--What does a Transition Matrix do?-->
       <h3>Transition Matrix</center> </h3>
-      <p></p>
+      <p>Transition matrices contain all transition probabilities from one state to another.  </p>
     </div>
     <div class="section-title" id="transition-properties"><!--Properties of a Transition Matrix-->
       <h3>Properties of a Transition Matrix</center> </h3>
-      <p></p>
+      <ul>
+        <li>Must be a square matrix</li>
+        <li>Elements represent probabilies, so these values must be in the range [0,1]</li>
+        <li>The sum of all elements in a row must be 1</li>
+        <li>Named T or P</li>
+      </ul>
     </div>
     <div class="section-title" id="state-vectors"><!--State/Probability Vectors-->
       <h3>State/Probability Vectors</center> </h3>
-      <p></p>
+      <p>For a system with <em>n</em> states, the <strong>state vector</strong> of a Markov chain
+      is a row or column vector q^k of n elements where q is the probability that the system is in the ith state after
+      k trials.</p>
+    </div>
+    <div class="section-title" id="state-vectors-properties">
+      <h3>Properties of State Vectors</h3>
+      <ul>
+        <li>Horizontal vector</li>
+        <li>Same number of elements as states in the Markov chain</li>
+        <li>Shows probability distribution of all states</li>
+        <li>Sum of elements is 1</li>
+        <li>Named q or x</li>
+      </ul>
     </div>
     <div class="section-title" id="repl">
       <h3> Markov Chains - Ruby Code </h3>
@@ -67,13 +93,11 @@
       <center><iframe frameborder="0" width="100%" height="500px" src="https://repl.it/GLmF/1"></iframe></center>
     </div>
     <div class="section-title" id="sources"><!--Sources-->
-      <h3><center>
-        <a href="https://www.dartmouth.edu/~chance/teaching_aids/books_articles/probability_book/Chapter11.pdf">
-        <a href="https://www.math.ucdavis.edu/~daddel/linear_algebra_appl/Applications/MarkovChain/MarkovChain_9_18/node1.html">
-        <a href="https://www.scribd.com/document/338415365/DFAI-MARKOV-CHAINS-02-pdf">
+      <h3>Sources</h3>
+        <a href="https://www.dartmouth.edu/~chance/teaching_aids/books_articles/probability_book/Chapter11.pdf">Click me</a><br>
+        <a href="https://www.math.ucdavis.edu/~daddel/linear_algebra_appl/Applications/MarkovChain/MarkovChain_9_18/node1.html">Click me</a><br>
+        <a href="https://www.scribd.com/document/338415365/DFAI-MARKOV-CHAINS-02-pdf">Click me</a>
         <a href="http://www.math.bas.bg/~jeni/Rebecca_Atherton.pdf">
-      </center> </h3>
-      <p>...</p>
     </div>
 
 
