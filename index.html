@@ -12,7 +12,7 @@
     In case I want to add a navigation bar for more webpages
     </nav> -->
     <center><div id="title">
-      <h1 id="main-title">Intro to Markov Chains</h1>
+      <h1 id="main-title">Markov Chains</h1>
     </div></center>
     <p id="group-members"> Text by Esther Cao, Ayush Gupta, and Vivian Young<br />Design by Vivian Young </p>
     <nav class="floating-menu">
@@ -24,7 +24,13 @@
       <!-- <a href=#transition-properties>Properties of Transition Matrices</a> -->
       <a href="#state-vectors">State/Probability Vectors</a>
       <!-- <a href="#state-vectors-properties">Properties of State Vectors</a> -->
-      <a href="regular">Regular and Steady-State</a>
+      <a href="#regular">Regular Transition Matrix</a>
+      <a href="#non-regular">Non-Regular Transition Matrix</a>
+      <a href="#steady-state">Steady-State Vectors</a>
+      <a href="#eigen">Eigenvectors and Eigenvalues</a>
+      <a href="second-iteration"Second Iteration</a>
+      <a href="absorbing">Absorbing Markov Chains</a>
+      <a href="applications">Applications</a>
       <a href=#repl>Markov Chains- Ruby Code</a>
       <a href=#sources>Sources</a>
     </nav>
@@ -86,6 +92,55 @@
         <li>Named q or x</li>
       </ul>
     </div>
+    <div class="section-title" id="regular">
+      <h3>Regular Transition Matrix</h3>
+      <p>
+        Transition matrices are considered <em>regular</em> if they contain all non-zerp
+        elements. These can be used to find steady-state or equilibrium vectors.
+        <center><img src="resources/images/regular.png" Regular Transition Matrix/></center>
+        <center>This matrix is regular because all of its elements are positive.</center>
+      </p>
+    </div>
+    <div class="section-title" id="non-regular">
+      <h3>Non-Regular Transition Matrix</h3>
+      <p>
+        Matrix A is not regular because any power of A still contains 0. Thus, no matrices of A contain
+        all positive elements.
+      </p>
+      <center><img src="resources/images/nonregular.png" Non-Regular Transition Matrix/></center>
+    </div>
+    <div class="section-title" id="steady-state">
+      <h3>Steady-State Vectors</h3>
+      <p>
+        After a large number of trials, the state vector remains constant. At this time, the
+        Markov chain has reached a stable distribution. This is called the <em>steady-state vector</em>
+        , also known as an <em>equilibrium vector</em>, and is represented by s or v. If A*p = A, then it is a steady-state vector.  <br>
+        <strong>They are independent of the original probability distribution and remain constant no matter what.</strong>
+      </p>
+      <center><img src="resources/images/steady.png" Steady-state vector/></center>
+    </div>
+    <div class="section-title" id= "eigen">
+      <h3>Eigenvectors and Eigenvalues</h3>
+
+    </div>
+    <div class="section-title" id="second-iteration">
+      <h3>Second Iteration</h3>
+      <p></p>
+    </div>
+    <div class="section-title" id="absorbing">
+      <h3>Absorbing Markov Chains</h3>
+      <p>
+        When the probability of jumping from state A to state B is 0.5, the probability
+        of staying at state A when it is already at state A is 1.
+        This is called the absorbing state, since when it gets there, it gets "absorbed". At
+        this point, it can no longer change to another state.
+      </p>
+    </div>
+
+
+
+
+
     <div class="section-title" id="repl">
       <h3> Markov Chains - Ruby Code </h3>
       <p>This is a demonstration of the workings of Markov Chains, coded with the
