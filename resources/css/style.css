@@ -55,7 +55,17 @@
 }
 
 #quiz-link a {
+  color: white;
+}
+
+#quiz-link a:hover {
   color: #DBFFA6;
+}
+
+#quiz-link {
+  background-color: #25424C;
+  border-radius: 8px;
+  color: color;
 }
 
 body {
