@@ -54,6 +54,10 @@
   color: #C4F7FD;
 }
 
+#quiz-link a {
+  color: #DBFFA6;
+}
+
 body {
   font-size: 18px;
   line-height: 30px;
@@ -114,4 +118,49 @@ ul {
   font-size: 14px;
   color: white;
   padding-bottom: 200px;
+}
+
+/*Quiz*/
+
+.answers li {
+list-style: upper-alpha;
+}
+
+label {
+margin-left: 0.5em;
+cursor: pointer;
+}
+
+#results {
+background: black;
+color: white;
+padding: 3px;
+text-align: center;
+width: 200px;
+cursor: pointer;
+border: 1px solid gray;
+}
+
+#results:hover {
+background: #DBFFA6;
+color: black;
+padding: 3px;
+text-align: center;
+width: 200px;
+cursor: pointer;
+border: 1px solid gray;
+}
+
+#categorylist {
+margin-top: 6px;
+display: none;
+}
+
+#category1, #category2, #category3, #category4, #category5, #category6, #category7, #category8, #category9, #category10, #category11 {
+display: none;
+}
+
+#closing {
+display: none;
+font-style: italic;
 }
