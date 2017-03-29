@@ -147,7 +147,9 @@
     </div>
     <div class="section-title" id= "eigen">
       <h3>Eigenvectors and Eigenvalues</h3>
-
+      <p>
+        The eigenvector of a transition matrix is a vector whose direction is unchanged when that transition is applied to it. However, its magnitude can be changed, represented by scalar multiplication with the eigenvalue. In the case of a regular Markov chain, if the steady-state vector is the same as the initial probability distribution, then no matter how many trials occur, the probability distribution will not change. Thus, the steady-state vector is an eigenvector of the transition matrix, and the eigenvalue is 1. This is useful to know because we can calculate the steady-state vector algebraically using the matrix equation s(T - I) = 0. The s represents the steady-state vector, the T is the transition matrix, the I is the identity matrix of the same order as T, and the 0 represents the zero vector with the same dimensions as s.
+      </p>
     </div>
     <div class="section-title" id="absorbing">
       <h3>Absorbing Markov Chains</h3>
@@ -158,7 +160,25 @@
         this point, it can no longer change to another state.
       </p>
     </div>
+    <div class="section-title" id="applications">
+      <h3>Applications of Markov Chains in Real-Life</h3>
+      <p>
+        Because Markov Chains allow people to model phenomena in a statistical way, many fields of research use them, including:
+          <ul>
+            <li>Meteorology</li>
+            <li>Ecology</li>
+            <li>Chemistry</li>
+            <li>Computer Science</li>
+            <li>Engineering</li>
+            <li>Finance</li>
+          </ul>
+        Google PageRank, is an algorithm that uses Markov Chains as well. It gathers a list of relevent websites and initally assigns themall to the same basic PageRank. It then iterates through all websites over and over, assigning modified PageRank weights based on how many other websites link to the current one. The transfer of weight based on links is done by a
+        <strong>very</strong> large transition matrix, similar to the ones we've learned about. <br>
+        Each web page is a state and the links between them are the transitions with probabilities. No matter which webpage you start on, your change of landing on a certain
+        webpage is fixed. The higher the fixed probability, the higher its PageRank and the higher its PageRank, the higher up it is in your search.
+      </p>
 
+    </div>
 
     <div class="section-title" id="quiz">
       <h3> Quiz </h3>
@@ -326,7 +346,7 @@
       <h3>Sources</h3>
         <a href="https://www.dartmouth.edu/~chance/teaching_aids/books_articles/probability_book/Chapter11.pdf">Click me</a><br>
         <a href="https://www.math.ucdavis.edu/~daddel/linear_algebra_appl/Applications/MarkovChain/MarkovChain_9_18/node1.html">Click me</a><br>
-        <a href="https://www.scribd.com/document/338415365/DFAI-MARKOV-CHAINS-02-pdf">Click me</a>
+        <a href="https://www.scribd.com/document/338415365/DFAI-MARKOV-CHAINS-02-pdf">Click me</a><br>
         <a href="http://www.math.bas.bg/~jeni/Rebecca_Atherton.pdf">Click me </a>
     </div>
 
