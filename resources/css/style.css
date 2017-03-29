@@ -22,6 +22,11 @@
   color: #DBFFA6;
 }
 
+#example img {
+  height: 80%;
+  width: 80%;
+}
+
 .floating-menu {
   border-radius: 20px;
   opacity: 0.73;

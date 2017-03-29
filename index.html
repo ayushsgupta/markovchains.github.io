@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="icon" type="image/png"
+     href="resources/images/favicon.ico" />
     <script type="text/javascript" src="resources/js/jquery.js"></script>
     <script type="text/javascript" src="resources/js/quiz-1.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
@@ -70,8 +72,22 @@
     </div>
     <div class="section-title" id="example"><!--Example of Markov Chain-->
       <h3>Example Problem</center> </h3>
-
-      <p></p>
+      <p>
+        A large city consumes solely Red Vines and Twizzlers. One of these candy companies wants to hold a larger share of the market and they conduct research to see which company is more successful after a disastrous FDA recall of Twizzlers and one month’s time. Currently, Red Vines owns 35% while Twizzlers owns 65% of the market share. These are some of the conclusions discovered after extensive research:
+        P(R → R): probability of a customer staying with Red Vines in the month = 0.8
+        P(R → T): probability of a customer switching from Red Vines to Twizzlers in the month = 0.2
+        P(T → T): probability of a customer staying with Twizzlers in the month = 0.6
+        P(T → R): probability of a customer switching from Twizzlers to Red Vines in the month = 0.4
+        <br />
+        <br />
+        To solve this problem, we need to construct an initial state matrix and multiply it by a transition matrix (which we will talk about very soon) to determine the final market shares of the two companies.
+      </p>
+      <center>
+        <img src="https://lh4.googleusercontent.com/CVanwA5W9HnFXdu3ycj5rij-O53EMwczo7X0KTKbKZ9AIKXT2GCgYc4Sd2pcgfXo9VQ2fE_GaI4IvtYqSZlw0Zip3YJkM23nFEDbZTsWzyfBHm_Rbk5oS-SUSV0rkPexeGbR4QkU">
+      </center>
+      <p>
+        As you can see, the final state after one month is Red Vines owning 67% of the market share and Twizzlers owning 33%.
+      </p>
     </div>
     <div class="section-title" id="transition-matrix"><!--What does a Transition Matrix do?-->
       <h3>Transition Matrix</center> </h3>
@@ -132,10 +148,6 @@
     <div class="section-title" id= "eigen">
       <h3>Eigenvectors and Eigenvalues</h3>
 
-    </div>
-    <div class="section-title" id="second-iteration">
-      <h3>Second Iteration</h3>
-      <p></p>
     </div>
     <div class="section-title" id="absorbing">
       <h3>Absorbing Markov Chains</h3>
@@ -307,7 +319,7 @@
     <div class="section-title" id="repl">
       <h3> Markov Chains - Ruby Code </h3>
       <p>This is a demonstration of the workings of Markov Chains, coded with the
-        programming language, Ruby. <br>To run this program, press the <em>run</em> button. Please do not alter any of the code.</p>
+        programming language, Ruby. <br>To run this program, press the <em>run</em> button. If you would like to play around with the program, scroll to the bottom and read the green comments for help.</p>
       <center><iframe frameborder="0" width="100%" height="500px" src="https://repl.it/GWqC/2"></iframe></center>
     </div>
     <div class="section-title" id="sources"><!--Sources-->
@@ -315,7 +327,7 @@
         <a href="https://www.dartmouth.edu/~chance/teaching_aids/books_articles/probability_book/Chapter11.pdf">Click me</a><br>
         <a href="https://www.math.ucdavis.edu/~daddel/linear_algebra_appl/Applications/MarkovChain/MarkovChain_9_18/node1.html">Click me</a><br>
         <a href="https://www.scribd.com/document/338415365/DFAI-MARKOV-CHAINS-02-pdf">Click me</a>
-        <a href="http://www.math.bas.bg/~jeni/Rebecca_Atherton.pdf">
+        <a href="http://www.math.bas.bg/~jeni/Rebecca_Atherton.pdf">Click me </a>
     </div>
 
 
